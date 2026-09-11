@@ -50,10 +50,22 @@
       "languageVersion": "2.19"
     },
     {
+      "name": "flutter_localizations",
+      "rootUri": "file:///Users/macbook/Developing/Flutter/SDK/flutter/packages/flutter_localizations",
+      "packageUri": "lib/",
+      "languageVersion": "3.9"
+    },
+    {
       "name": "flutter_test",
       "rootUri": "file:///Users/macbook/Developing/Flutter/SDK/flutter/packages/flutter_test",
       "packageUri": "lib/",
       "languageVersion": "3.9"
+    },
+    {
+      "name": "intl",
+      "rootUri": "file:///Users/macbook/.pub-cache/hosted/pub.dev/intl-0.20.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
     },
     {
       "name": "leak_tracker",

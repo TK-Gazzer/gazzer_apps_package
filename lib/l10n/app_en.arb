@@ -1,0 +1,22 @@
+{
+  "helloWorld": "Hello World!",
+  "statusPending": "Pending",
+  "statusAccepted": "Accepted",
+  "statusConfirmed": "Confirmed",
+  "statusProcessing": "Processing",
+  "statusPreparing": "Preparing",
+  "statusHandover": "Handover",
+  "statusReady": "Ready",
+  "statusShipped": "Shipped",
+  "statusDelivered": "Delivered",
+  "statusCancelled": "Cancelled",
+  "statusAwaitingCustomer": "Awaiting Customer",
+  "statusAwaitingPayment": "Awaiting Payment",
+  "statusPickedUp": "Picked Up",
+  "statusFailed": "Failed",
+  "statusPaymentFailed": "Payment Failed",
+  "statusRefundRequested": "Refund Requested",
+  "statusRefundRequestCanceled": "Refund Request Canceled",
+  "statusRefunded": "Refunded",
+  "statusUnknown": "Unknown"
+}

@@ -1,0 +1,22 @@
+{
+  "helloWorld": "مرحباً بالعالم!",
+  "statusPending": "قيد الانتظار",
+  "statusAccepted": "تم القبول",
+  "statusConfirmed": "مؤكد",
+  "statusProcessing": "قيد المعالجة",
+  "statusPreparing": "جاري التحضير",
+  "statusHandover": "تسليم",
+  "statusReady": "جاهز",
+  "statusShipped": "تم الشحن",
+  "statusDelivered": "تم التوصيل",
+  "statusCancelled": "ملغي",
+  "statusAwaitingCustomer": "في انتظار العميل",
+  "statusAwaitingPayment": "في انتظار الدفع",
+  "statusPickedUp": "تم الاستلام",
+  "statusFailed": "فشل",
+  "statusPaymentFailed": "فشل الدفع",
+  "statusRefundRequested": "تم طلب استرجاع",
+  "statusRefundRequestCanceled": "تم إلغاء طلب الاسترجاع",
+  "statusRefunded": "تم الاسترجاع",
+  "statusUnknown": "غير معروف"
+}
