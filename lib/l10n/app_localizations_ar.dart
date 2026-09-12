@@ -67,4 +67,13 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get statusUnknown => 'غير معروف';
+
+  @override
+  String get fromVendor => 'From Vendor';
+
+  @override
+  String get fromUser => 'From You';
+
+  @override
+  String get fromAdmin => 'From Admin';
 }

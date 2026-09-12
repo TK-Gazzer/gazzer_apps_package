@@ -18,5 +18,8 @@
   "statusRefundRequested": "Refund Requested",
   "statusRefundRequestCanceled": "Refund Request Canceled",
   "statusRefunded": "Refunded",
-  "statusUnknown": "Unknown"
+  "statusUnknown": "Unknown",
+   "fromVendor": "From Vendor",
+  "fromUser": "From You",
+  "fromAdmin": "From Admin"
 }

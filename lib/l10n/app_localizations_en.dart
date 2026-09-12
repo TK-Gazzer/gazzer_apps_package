@@ -67,4 +67,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get statusUnknown => 'Unknown';
+
+  @override
+  String get fromVendor => 'From Vendor';
+
+  @override
+  String get fromUser => 'From You';
+
+  @override
+  String get fromAdmin => 'From Admin';
 }

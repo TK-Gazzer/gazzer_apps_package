@@ -18,5 +18,8 @@
   "statusRefundRequested": "تم طلب استرجاع",
   "statusRefundRequestCanceled": "تم إلغاء طلب الاسترجاع",
   "statusRefunded": "تم الاسترجاع",
-  "statusUnknown": "غير معروف"
+  "statusUnknown": "غير معروف",
+   "fromVendor": "From Vendor",
+  "fromUser": "From You",
+  "fromAdmin": "From Admin"
 }

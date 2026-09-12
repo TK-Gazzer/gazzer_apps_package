@@ -217,6 +217,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Unknown'**
   String get statusUnknown;
+
+  /// No description provided for @fromVendor.
+  ///
+  /// In en, this message translates to:
+  /// **'From Vendor'**
+  String get fromVendor;
+
+  /// No description provided for @fromUser.
+  ///
+  /// In en, this message translates to:
+  /// **'From You'**
+  String get fromUser;
+
+  /// No description provided for @fromAdmin.
+  ///
+  /// In en, this message translates to:
+  /// **'From Admin'**
+  String get fromAdmin;
 }
 
 class _AppLocalizationsDelegate
