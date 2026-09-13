@@ -3,25 +3,26 @@ import 'package:gazzer_apps/src/models/order_history.dart';
 
 abstract class Helpers {
 
-String getFormattedTimeAndUser(OrderHistory history) {
+static String getFormattedTimeAndUser(OrderHistory history) {
     String timeStr = '';
     if (history.createdAt != null && history.createdAt!.isNotEmpty) {
       timeStr = Helpers.convertStringToTime(history.createdAt ?? '');
     }
     String userStr = '';
-    switch (history.userType?.toLowerCase()) {
-      case 'vendor':
-        userStr = L10n.tr().fromVendor;
-        break;
-      case 'user':
-        userStr = L10n.tr().fromUser;
-        break;
-      case 'admin':
-        userStr = L10n.tr().fromAdmin;
-        break;
-      default:
-        userStr = history.userType ?? '';
-    }
+
+    // switch (history.userType?.toLowerCase()) {
+    //   case 'vendor':
+    //     userStr = L10n.tr().fromVendor;
+    //     break;
+    //   case 'user':
+    //     userStr = L10n.tr().fromUser;
+    //     break;
+    //   case 'admin':
+    //     userStr = L10n.tr().fromAdmin;
+    //     break;
+    //   default:
+    //     userStr = history.userType ?? '';
+    // }
     if (timeStr.isEmpty) return userStr;
     if (userStr.isEmpty) return timeStr;
     return '$timeStr ٠ $userStr';
