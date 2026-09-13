@@ -62,26 +62,29 @@ OrderStatus getOrderStatus(String orderStatus) {
 }
 
 extension OrderStatusExtension on OrderStatus {
-  String get label {
+  String  label (context){
     switch (this) {
       case OrderStatus.pending:
-        return L10n.tr().statusPending;
+      return AppLocalizations.of(context)?.statusPending ?? 'Pending';
       case OrderStatus.awaitingCustomer:
-        return L10n.tr().statusAwaitingCustomer;
+      return AppLocalizations.of(context)?.statusAwaitingCustomer ?? 'Awaiting Customer';
       case OrderStatus.waitingPayment:
-        return L10n.tr().statusAwaitingPayment;
+       return AppLocalizations.of(context)?.statusAwaitingPayment ?? 'Waiting Payment';
       case OrderStatus.confirmed:
-        return L10n.tr().statusConfirmed;
+       return AppLocalizations.of(context)?.statusConfirmed ?? 'Confirmed';
+
       case OrderStatus.preparing:
-        return L10n.tr().statusPreparing;
+       return AppLocalizations.of(context)?.statusPreparing ?? 'Preparing';
       case OrderStatus.processing:
-        return L10n.tr().statusProcessing;
+       return AppLocalizations.of(context)?.statusProcessing ?? 'Processing';
       case OrderStatus.handover:
-        return L10n.tr().statusHandover;
+       return AppLocalizations.of(context)?.statusHandover ?? 'Handover';  
+
       case OrderStatus.accepted:
-        return L10n.tr().statusAccepted;
+       return AppLocalizations.of(context)?.statusAccepted ?? 'Accepted';
       case OrderStatus.pickedUp:
-        return L10n.tr().statusPickedUp;
+       return AppLocalizations.of(context)?.statusPickedUp ?? 'Pickedp';
+
       case OrderStatus.delivered:
         return L10n.tr().statusDelivered;
       case OrderStatus.cancelled:
