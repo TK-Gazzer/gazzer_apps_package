@@ -44,6 +44,7 @@ OrderStatus getOrderStatus(String orderStatus) {
       return OrderStatus.confirmed;
     case 'delivered':
       return OrderStatus.delivered;
+     case 'canceled': 
     case 'cancelled':
       return OrderStatus.cancelled;
     case 'failed':
