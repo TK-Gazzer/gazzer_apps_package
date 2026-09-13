@@ -83,24 +83,24 @@ extension OrderStatusExtension on OrderStatus {
       case OrderStatus.accepted:
        return AppLocalizations.of(context)?.statusAccepted ?? 'Accepted';
       case OrderStatus.pickedUp:
-       return AppLocalizations.of(context)?.statusPickedUp ?? 'Pickedp';
+       return AppLocalizations.of(context)?.statusPickedUp ?? 'Picked Up';
 
       case OrderStatus.delivered:
-        return L10n.tr().statusDelivered;
+        return AppLocalizations.of(context)?.statusDelivered ?? 'Delivered';
       case OrderStatus.cancelled:
-        return L10n.tr().statusCancelled;
+        return AppLocalizations.of(context)?.statusCancelled ?? 'Cancelled';
       case OrderStatus.failed:
-        return L10n.tr().statusFailed;
+        return AppLocalizations.of(context)?.statusFailed ?? 'Failed';
       case OrderStatus.paymentFailed:
-        return L10n.tr().statusPaymentFailed;
+        return AppLocalizations.of(context)?.statusPaymentFailed ?? 'Payment Failed';
       case OrderStatus.refundRequested:
-        return L10n.tr().statusRefundRequested;
+        return AppLocalizations.of(context)?.statusRefundRequested ?? 'Refund Requested';
       case OrderStatus.refundRequestCanceled:
-        return L10n.tr().statusRefundRequestCanceled;
+        return AppLocalizations.of(context)?.statusRefundRequestCanceled ?? 'Refund Request Canceled';
       case OrderStatus.refunded:
-        return L10n.tr().statusRefunded;
+        return AppLocalizations.of(context)?.statusRefunded ?? 'Refunded';
       case OrderStatus.unknown:
-        return L10n.tr().statusUnknown;
+        return AppLocalizations.of(context)?.statusUnknown ?? 'Unknown';
     }
   }
 
