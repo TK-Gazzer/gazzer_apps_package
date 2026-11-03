@@ -7,4 +7,4 @@ export 'src/enums/order_status.dart';
 export 'l10n/app_localizations.dart';
 export 'src/l10n.dart';
 export 'src/helpers/helpers.dart';
-
+export 'src/helpers/product_quantity.dart';
