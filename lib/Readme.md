@@ -11,7 +11,9 @@ clash with GetX's in files that only need the models.
 Setup in the host app:
 
 ```dart
-import 'package:gazzer_apps/gazzer_ui.dart';
+// GetX already provides context.theme / textTheme / isDarkMode (same meaning),
+// so hide the kit's copies to avoid "ambiguous extension member" errors.
+import 'package:gazzer_apps/gazzer_ui.dart' hide GazzerThemeContext;
 
 GazzerUi.navigatorKey = Get.key; // or your own GlobalKey<NavigatorState>
 

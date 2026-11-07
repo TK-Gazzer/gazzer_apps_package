@@ -25,20 +25,16 @@ extension BuildContextExtension on BuildContext {
 
   double get maxScreenSize => max(MediaQuery.of(this).size.height, MediaQuery.of(this).size.width);
 
-  /// Theme
-  ThemeData get theme => Theme.of(this);
+  TextTheme get _gazzerTextTheme => Theme.of(this).textTheme;
 
-  /// TextTheme
-  TextTheme get textTheme => theme.textTheme;
-
-  TextStyle get style32700 => textTheme.displayLarge!;
-  TextStyle get style24500 => textTheme.titleLarge!;
-  TextStyle get style20500 => textTheme.titleMedium!;
-  TextStyle get style16500 => textTheme.titleSmall!;
-  TextStyle get style16400 => textTheme.labelLarge!;
-  TextStyle get style14400 => textTheme.labelMedium!;
-  TextStyle get style12400 => textTheme.labelSmall!;
-  TextStyle get style8400 => textTheme.bodySmall!;
+  TextStyle get style32700 => _gazzerTextTheme.displayLarge!;
+  TextStyle get style24500 => _gazzerTextTheme.titleLarge!;
+  TextStyle get style20500 => _gazzerTextTheme.titleMedium!;
+  TextStyle get style16500 => _gazzerTextTheme.titleSmall!;
+  TextStyle get style16400 => _gazzerTextTheme.labelLarge!;
+  TextStyle get style14400 => _gazzerTextTheme.labelMedium!;
+  TextStyle get style12400 => _gazzerTextTheme.labelSmall!;
+  TextStyle get style8400 => _gazzerTextTheme.bodySmall!;
 }
 
 extension PaddingList on List<Widget> {
@@ -90,7 +86,14 @@ extension ArabicNumbersDouble on double {
   }
   }
 
-extension DarkMoodExtension on BuildContext {
+/// Members that GetX's `ContextExtensionss` also defines, with the same
+/// meaning. GetX apps can drop these to avoid ambiguity:
+/// `import 'package:gazzer_apps/gazzer_ui.dart' hide GazzerThemeContext;`
+extension GazzerThemeContext on BuildContext {
+  ThemeData get theme => Theme.of(this);
+
+  TextTheme get textTheme => theme.textTheme;
+
   /// Driven by the active [ThemeData.brightness], so it follows whatever
   /// `themeMode` the host app passes to its MaterialApp / GetMaterialApp.
   bool get isDarkMode => Theme.of(this).brightness == Brightness.dark;
