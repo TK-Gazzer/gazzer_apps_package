@@ -76,4 +76,49 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get fromAdmin => 'From Admin';
+
+  @override
+  String get busy => 'مشغول';
+
+  @override
+  String get cancel => 'إلغاء';
+
+  @override
+  String get confirm => 'تأكيد';
+
+  @override
+  String get hours => 'ساعات';
+
+  @override
+  String get mins => 'دقائق';
+
+  @override
+  String get noData => 'لا توجد بيانات';
+
+  @override
+  String get off => 'OFF';
+
+  @override
+  String get oops => 'عذرًا';
+
+  @override
+  String get pressDoubleBackToExit => 'اضغط مرتين للخروج';
+
+  @override
+  String get secs => 'ثواني';
+
+  @override
+  String get submit => 'إرسال';
+
+  @override
+  String get thisFieldIsRequired => 'هذا الحقل مطلوب.';
+
+  @override
+  String get tryAgain => 'حاول مرة أخرى';
+
+  @override
+  String get up_to => 'Up To';
+
+  @override
+  String get viewAll => 'عرض الكل';
 }

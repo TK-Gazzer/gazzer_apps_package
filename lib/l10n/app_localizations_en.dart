@@ -76,4 +76,49 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get fromAdmin => 'From Admin';
+
+  @override
+  String get busy => 'Busy';
+
+  @override
+  String get cancel => 'Cancel';
+
+  @override
+  String get confirm => 'Confirm';
+
+  @override
+  String get hours => 'hours';
+
+  @override
+  String get mins => 'mins';
+
+  @override
+  String get noData => 'No Data';
+
+  @override
+  String get off => 'OFF';
+
+  @override
+  String get oops => 'Oops';
+
+  @override
+  String get pressDoubleBackToExit => 'Press double back to exit';
+
+  @override
+  String get secs => 'secs';
+
+  @override
+  String get submit => 'Submit';
+
+  @override
+  String get thisFieldIsRequired => 'This field is required.';
+
+  @override
+  String get tryAgain => 'Try Again';
+
+  @override
+  String get up_to => 'Up To';
+
+  @override
+  String get viewAll => 'See All';
 }
